@@ -728,7 +728,27 @@ class GroupSearch extends Group
     public function searchIndicators3_1()
     {
 
-        $query = group::find()->where(['cat_id' => 29]);
+        $query = group::find()->where(['cat_id' => 18]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    public function searchIndicators55()
+    {
+
+        $query = group::find()->where(['cat_id' => 55]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    public function searchIndicators56()
+    {
+
+        $query = group::find()->where(['cat_id' => 56]);
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
         ]);

@@ -319,6 +319,31 @@ class SiteController extends Controller
         $indicators3_1 = $searchModel->searchIndicators3_1();
         $indicators3_1->pagination->pageSize = 10;
         $indicators3_1->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators55 = $searchModel->searchIndicators55();
+        $indicators55->pagination->pageSize = 10;
+        $indicators55->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators56 = $searchModel->searchIndicators56();
+        $indicators56->pagination->pageSize = 10;
+        $indicators56->sort->defaultOrder = ['id' => SORT_ASC];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
         $indicators3_2 = $searchModel->searchIndicators3_2();
         $indicators3_2->pagination->pageSize = 10;
@@ -459,6 +484,16 @@ class SiteController extends Controller
             'indicators54' => $indicators54,
 
             // ไตรมาส 3
+            'indicators55' => $indicators55,
+            'indicators56' => $indicators56,
+
+
+
+
+
+
+
+
             'indicators3_1' => $indicators3_1,
             'indicators3_2' => $indicators3_2,
             'indicators3_3' => $indicators3_3,
