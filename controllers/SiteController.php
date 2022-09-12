@@ -100,7 +100,7 @@ class SiteController extends Controller
         $indicators1 = $searchModel->searchIndicators1();
         $indicators1->pagination->pageSize = 10;
         $indicators1->sort->defaultOrder = ['id' => SORT_ASC];
-        
+
         $indicators2 = $searchModel->searchIndicators2();
         $indicators2->pagination->pageSize = 10;
         $indicators2->sort->defaultOrder = ['id' => SORT_ASC];
@@ -140,7 +140,7 @@ class SiteController extends Controller
         $indicators11 = $searchModel->searchIndicators11();
         $indicators11->pagination->pageSize = 10;
         $indicators11->sort->defaultOrder = ['id' => SORT_ASC];
-        
+
         $indicators12 = $searchModel->searchIndicators12();
         $indicators12->pagination->pageSize = 10;
         $indicators12->sort->defaultOrder = ['id' => SORT_ASC];
@@ -180,7 +180,7 @@ class SiteController extends Controller
         $indicators21 = $searchModel->searchIndicators21();
         $indicators21->pagination->pageSize = 10;
         $indicators21->sort->defaultOrder = ['id' => SORT_ASC];
-        
+
         $indicators22 = $searchModel->searchIndicators22();
         $indicators22->pagination->pageSize = 10;
         $indicators22->sort->defaultOrder = ['id' => SORT_ASC];
@@ -220,7 +220,7 @@ class SiteController extends Controller
         $indicators31 = $searchModel->searchIndicators31();
         $indicators31->pagination->pageSize = 10;
         $indicators31->sort->defaultOrder = ['id' => SORT_ASC];
-        
+
         $indicators32 = $searchModel->searchIndicators32();
         $indicators32->pagination->pageSize = 10;
         $indicators32->sort->defaultOrder = ['id' => SORT_ASC];
@@ -260,7 +260,7 @@ class SiteController extends Controller
         $indicators41 = $searchModel->searchIndicators41();
         $indicators41->pagination->pageSize = 10;
         $indicators41->sort->defaultOrder = ['id' => SORT_ASC];
-        
+
         $indicators42 = $searchModel->searchIndicators42();
         $indicators42->pagination->pageSize = 10;
         $indicators42->sort->defaultOrder = ['id' => SORT_ASC];
@@ -304,7 +304,7 @@ class SiteController extends Controller
         $indicators52 = $searchModel->searchIndicators52();
         $indicators52->pagination->pageSize = 10;
         $indicators52->sort->defaultOrder = ['id' => SORT_ASC];
-        
+
         $indicators53 = $searchModel->searchIndicators53();
         $indicators53->pagination->pageSize = 10;
         $indicators53->sort->defaultOrder = ['id' => SORT_ASC];
@@ -328,23 +328,6 @@ class SiteController extends Controller
         $indicators56->pagination->pageSize = 10;
         $indicators56->sort->defaultOrder = ['id' => SORT_ASC];
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
         $indicators3_2 = $searchModel->searchIndicators3_2();
         $indicators3_2->pagination->pageSize = 10;
         $indicators3_2->sort->defaultOrder = ['id' => SORT_ASC];
@@ -380,7 +363,7 @@ class SiteController extends Controller
         $indicators4_1 = $searchModel->searchIndicators4_1();
         $indicators4_1->pagination->pageSize = 10;
         $indicators4_1->sort->defaultOrder = ['id' => SORT_ASC];
-        
+
         $indicators4_2 = $searchModel->searchIndicators4_2();
         $indicators4_2->pagination->pageSize = 10;
         $indicators4_2->sort->defaultOrder = ['id' => SORT_ASC];
@@ -412,6 +395,20 @@ class SiteController extends Controller
         $indicators4_9 = $searchModel->searchIndicators4_9();
         $indicators4_9->pagination->pageSize = 10;
         $indicators4_9->sort->defaultOrder = ['id' => SORT_ASC];
+
+        // ไตรมาส 4
+        $indicators57 = $searchModel->searchIndicators57();
+        $indicators57->pagination->pageSize = 10;
+        $indicators57->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators58 = $searchModel->searchIndicators58();
+        $indicators58->pagination->pageSize = 10;
+        $indicators58->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators59 = $searchModel->searchIndicators59();
+        $indicators59->pagination->pageSize = 10;
+        $indicators59->sort->defaultOrder = ['id' => SORT_ASC];
+
         //test send mail
         //$this->sendMail('ikkdev@gmail.com','Your Fullname');
 
@@ -486,14 +483,6 @@ class SiteController extends Controller
             // ไตรมาส 3
             'indicators55' => $indicators55,
             'indicators56' => $indicators56,
-
-
-
-
-
-
-
-
             'indicators3_1' => $indicators3_1,
             'indicators3_2' => $indicators3_2,
             'indicators3_3' => $indicators3_3,
@@ -512,6 +501,11 @@ class SiteController extends Controller
             'indicators4_7' => $indicators4_7,
             'indicators4_8' => $indicators4_8,
             'indicators4_9' => $indicators4_9,
+
+            // ไตรมาส 4
+            'indicators57' => $indicators57,
+            'indicators58' => $indicators58,
+            'indicators59' => $indicators59,
         ]);
     }
 

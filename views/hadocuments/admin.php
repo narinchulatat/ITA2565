@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="hadocuments-index">
 
-  <!-- <h1><?php echo $ha->name; ?></h1> -->
+  <!-- <h1><?//php echo $ha->name; ?></h1> -->
 
   <p>
     <?= Html::a('เพิ่มเอกสาร', ['create'], ['class' => 'btn btn-success']) ?>
@@ -27,8 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
   <?php
   ?>
 
-  <!-- <h3 class="panel-title"><i class="glyphicon glyphicon-list-alt"></i> <?php echo $ha->name; ?>
-      <p /> -->
+  <!-- <h3 class="panel-title"><i class="glyphicon glyphicon-list-alt"></i> <?//php echo $ha->name; ?><p /> -->
   <div class="box box-primary">
     <div class="box-header with-border">
       <h3 class="box-title">เอกสาร ITA</h3>

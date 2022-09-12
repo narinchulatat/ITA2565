@@ -924,4 +924,36 @@ class GroupSearch extends Group
         ]);
         return $dataProvider;
     }
+
+    // ไตรมาส 4
+
+    public function searchIndicators57()
+    {
+
+        $query = group::find()->where(['cat_id' => 57]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+    
+    public function searchIndicators58()
+    {
+
+        $query = group::find()->where(['cat_id' => 58]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+    
+    public function searchIndicators59()
+    {
+
+        $query = group::find()->where(['cat_id' => 59]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
 }
