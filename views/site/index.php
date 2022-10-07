@@ -1319,7 +1319,7 @@ use app\models\Group;
 
         <!-- TAB 3 -->
 
-        <div class="tab-pane active" id="tab_3">
+        <div class="tab-pane" id="tab_3">
           <div class="box-body">
             <div class="row">
               <div class="col-md-12">
