@@ -409,6 +409,47 @@ class SiteController extends Controller
         $indicators59->pagination->pageSize = 10;
         $indicators59->sort->defaultOrder = ['id' => SORT_ASC];
 
+        // 2566
+        $indicators60 = $searchModel->searchIndicators60();
+        $indicators60->pagination->pageSize = 40;
+        $indicators60->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators61 = $searchModel->searchIndicators61();
+        $indicators61->pagination->pageSize = 40;
+        $indicators61->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators62 = $searchModel->searchIndicators62();
+        $indicators62->pagination->pageSize = 40;
+        $indicators62->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators63 = $searchModel->searchIndicators63();
+        $indicators63->pagination->pageSize = 40;
+        $indicators63->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators64 = $searchModel->searchIndicators64();
+        $indicators64->pagination->pageSize = 40;
+        $indicators64->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators65 = $searchModel->searchIndicators65();
+        $indicators65->pagination->pageSize = 40;
+        $indicators65->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators66 = $searchModel->searchIndicators66();
+        $indicators66->pagination->pageSize = 40;
+        $indicators66->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators67 = $searchModel->searchIndicators67();
+        $indicators67->pagination->pageSize = 40;
+        $indicators67->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators68 = $searchModel->searchIndicators68();
+        $indicators68->pagination->pageSize = 40;
+        $indicators68->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators69 = $searchModel->searchIndicators69();
+        $indicators69->pagination->pageSize = 40;
+        $indicators69->sort->defaultOrder = ['id' => SORT_ASC];
+
         //test send mail
         //$this->sendMail('ikkdev@gmail.com','Your Fullname');
 
@@ -506,6 +547,18 @@ class SiteController extends Controller
             'indicators57' => $indicators57,
             'indicators58' => $indicators58,
             'indicators59' => $indicators59,
+
+            // 2566
+            'indicators60' => $indicators60,
+            'indicators61' => $indicators61,
+            'indicators62' => $indicators62,
+            'indicators63' => $indicators63,
+            'indicators64' => $indicators64,
+            'indicators65' => $indicators65,
+            'indicators66' => $indicators66,
+            'indicators67' => $indicators67,
+            'indicators68' => $indicators68,
+            'indicators69' => $indicators69,
         ]);
     }
 

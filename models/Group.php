@@ -38,7 +38,7 @@ class Group extends \yii\db\ActiveRecord
             [['name', 'create_date'], 'required'],
             [['create_date'], 'safe'],
             [['cat_id'], 'integer'],
-            [['name'], 'string', 'max' => 255],
+            [['name'], 'string'],
             [['cat_id'], 'exist', 'skipOnError' => true, 'targetClass' => HaCategory::className(), 'targetAttribute' => ['cat_id' => 'id']],
         ];
     }

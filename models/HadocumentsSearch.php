@@ -18,7 +18,7 @@ class HadocumentsSearch extends HaDocuments
     public function rules()
     {
         return [
-            [['id', 'cat_id', 'group_id'], 'integer'],
+            [['id', 'cat_id', 'group_id', 'user_id'], 'integer'],
             [['ref', 'title', 'description', 'covenant', 'docs', 'create_date'], 'safe'],
         ];
     }
@@ -63,6 +63,7 @@ class HadocumentsSearch extends HaDocuments
             'create_date' => $this->create_date,
             'cat_id' => $this->cat_id,
             'group_id' => $this->group_id,
+            'user_id' => $this->user_id,
         ]);
 
         $query->andFilterWhere(['like', 'ref', $this->ref])

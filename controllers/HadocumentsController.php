@@ -130,6 +130,7 @@ class HadocumentsController extends Controller
             $this->CreateDir($model->ref);
             $model->covenant = $this->uploadSingleFile($model);
             $model->docs = $this->uploadMultipleFile($model);
+            $model->user_id = Yii::$app->user->identity->id;
 
             if ($model->save()) {
                 return $this->redirect(['view', 'id' => $model->id]);
@@ -164,6 +165,7 @@ class HadocumentsController extends Controller
             $this->CreateDir($model->ref);
             $model->covenant = $this->uploadSingleFile($model, $tempCovenant);
             $model->docs = $this->uploadMultipleFile($model, $tempDocs);
+            $model->user_id = Yii::$app->user->identity->id;
 
             if ($model->save()) {
                 return $this->redirect(['view', 'id' => $model->id]);

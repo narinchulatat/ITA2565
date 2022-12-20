@@ -19,6 +19,7 @@ use yii\helpers\Json;
  * @property string $create_date สร้างวันที่
  * @property int $cat_id ID หมวดหมู่หลัก
  * @property int $group_id ID หมวดหมู่ย่อย
+ * @property int $user_id ผู้บันทึก
  *
  * @property Group $group
  * @property HaCategory $cat
@@ -43,7 +44,7 @@ class HaDocuments extends \yii\db\ActiveRecord
             [['description'], 'string'],
             [['docs'],'file','maxFiles'=>20,'skipOnEmpty'=>true],
             [['create_date'], 'safe'],
-            [['cat_id', 'group_id'], 'integer'],
+            [['cat_id', 'group_id', 'user_id'], 'integer'],
             [['ref'], 'string', 'max' => 50],
             [['title', 'covenant'], 'string', 'max' => 255],
             [['group_id'], 'exist', 'skipOnError' => true, 'targetClass' => Group::className(), 'targetAttribute' => ['group_id' => 'id']],
@@ -66,6 +67,7 @@ class HaDocuments extends \yii\db\ActiveRecord
             'create_date' => 'สร้างวันที่',
             'cat_id' => 'หมวดหมู่หลัก',
             'group_id' => 'หมวดหมู่ย่อย',
+            'user_id' => 'ผู้บันทึก',
         ];
     }
 

@@ -946,7 +946,7 @@ class GroupSearch extends Group
         ]);
         return $dataProvider;
     }
-    
+
     public function searchIndicators59()
     {
 
@@ -956,4 +956,108 @@ class GroupSearch extends Group
         ]);
         return $dataProvider;
     }
+    
+    public function searchIndicators60()
+    {
+
+        $query = group::find()->where(['cat_id' => 60]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    public function searchIndicators61()
+    {
+
+        $query = group::find()->where(['cat_id' => 61]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    public function searchIndicators62()
+    {
+
+        $query = group::find()->where(['cat_id' => 62]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    public function searchIndicators63()
+    {
+
+        $query = group::find()->where(['cat_id' => 63]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    public function searchIndicators64()
+    {
+
+        $query = group::find()->where(['cat_id' => 64]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    public function searchIndicators65()
+    {
+
+        $query = group::find()->where(['cat_id' => 65]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    public function searchIndicators66()
+    {
+
+        $query = group::find()->where(['cat_id' => 66]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    public function searchIndicators67()
+    {
+
+        $query = group::find()->where(['cat_id' => 67]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    public function searchIndicators68()
+    {
+
+        $query = group::find()->where(['cat_id' => 68]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    public function searchIndicators69()
+    {
+
+        $query = group::find()->where(['cat_id' => 69]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+
+
+
 }
