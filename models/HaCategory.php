@@ -31,7 +31,7 @@ class HaCategory extends \yii\db\ActiveRecord
         return [
             [['name', 'create_date'], 'required'],
             [['create_date'], 'safe'],
-            [['name'], 'string', 'max' => 255],
+            [['name'], 'string'],
         ];
     }
 
