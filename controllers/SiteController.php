@@ -768,6 +768,7 @@ class SiteController extends Controller
             'indicators108' => $indicators108,
             'indicators109' => $indicators109,
             'indicators110' => $indicators110,
+            
 
         ]);
     }
