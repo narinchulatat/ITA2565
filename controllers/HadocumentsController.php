@@ -81,7 +81,6 @@ class HadocumentsController extends Controller
     // }
     public function actionIndex()
     {
-
         $searchModel = new HadocumentsSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -93,10 +92,8 @@ class HadocumentsController extends Controller
 
     public function actionAdmin()
     {
-
         $searchModel = new HadocumentsSearch();
         $dataProvider = $searchModel->searchAdmin(Yii::$app->request->queryParams);
-
         return $this->render('admin', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,

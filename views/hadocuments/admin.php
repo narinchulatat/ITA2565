@@ -18,7 +18,8 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="hadocuments-index">
 
-  <!-- <h1><?//php echo $ha->name; ?></h1> -->
+  <!-- <h1><? //php echo $ha->name; 
+            ?></h1> -->
 
   <p>
     <?= Html::a('เพิ่มเอกสาร', ['create'], ['class' => 'btn btn-success']) ?>
@@ -27,7 +28,8 @@ $this->params['breadcrumbs'][] = $this->title;
   <?php
   ?>
 
-  <!-- <h3 class="panel-title"><i class="glyphicon glyphicon-list-alt"></i> <?//php echo $ha->name; ?><p /> -->
+  <!-- <h3 class="panel-title"><i class="glyphicon glyphicon-list-alt"></i> <? //php echo $ha->name; 
+                                                                            ?><p /> -->
   <div class="box box-primary">
     <div class="box-header with-border">
       <h3 class="box-title">เอกสาร ITA</h3>
@@ -43,6 +45,36 @@ $this->params['breadcrumbs'][] = $this->title;
       <?= DataTables::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
+        'clientOptions' => [
+          "lengthMenu" => [[20, -1], [20, Yii::t('app', "All")]],
+          "info" => false,
+          "responsive" => true,
+          "dom" => 'lfTrtip',
+          "tableTools" => [
+            "aButtons" => [
+              [
+                "sExtends" => 'copy',
+                "sButtonText" => Yii::t('app', "Copy to clipboard")
+              ], 
+              [
+                "sExtends" => 'csv',
+                "sButtonText" => Yii::t('app', "Save to CSV")
+              ], 
+              [
+                "sExtends" => 'xls',
+                "oSelectorOpts" => ["page" => 'current']
+              ], 
+              [
+                "sExtends" => 'pdf',
+                "sButtonText" => Yii::t('app', "Save to PDF")
+              ], 
+              [
+                "sExtends" => 'print',
+                "sButtonText" => Yii::t('app', "Print")
+              ],
+            ]
+          ]
+        ],
         'columns' => [
           ['class' => 'yii\grid\SerialColumn'],
 
@@ -72,30 +104,34 @@ $this->params['breadcrumbs'][] = $this->title;
 
           // ['class' => 'yii\grid\ActionColumn'],
           [
-              'header'=>'แก้ไข/ลบ',
-              'class' => 'yii\grid\ActionColumn',
-              'options' => ['style' => 'width:10%;'],
-              'template' => '{update} {delete}',
-              'buttons' => [
-                  'update' => function($url, $model, $key) {
+            'header' => 'แก้ไข/ลบ',
+            'class' => 'yii\grid\ActionColumn',
+            'options' => ['style' => 'width:10%;'],
+            'template' => '{update} {delete}',
+            'buttons' => [
+              'update' => function ($url, $model, $key) {
 
-                      return Html::a('<i class="glyphicon glyphicon-pencil"></i>', ['update','id'=>$model->id], ['class' => 'btn btn-warning btn-xs']);
-                  },
+                return Html::a('<i class="glyphicon glyphicon-pencil"></i>', ['update', 'id' => $model->id], ['class' => 'btn btn-warning btn-xs']);
+              },
 
-                  'delete' => function($url, $model, $key) {
+              'delete' => function ($url, $model, $key) {
 
-                      return Html::a('<i class="glyphicon glyphicon-trash"></i>',  ['delete','id'=>$model->id], [
-                                  'title' => Yii::t('yii', 'Delete'),
-                                  'data-confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),
-                                  'data-method' => 'post',
-                                  'data-pjax' => '0',
-                                  'class' => 'btn btn-danger btn-xs'
-                      ]);
-                  }
-              ]
+                return Html::a('<i class="glyphicon glyphicon-trash"></i>',  ['delete', 'id' => $model->id], [
+                  'title' => Yii::t('yii', 'Delete'),
+                  'data-confirm' => Yii::t('yii', 'Are you sure you want to delete this item?'),
+                  'data-method' => 'post',
+                  'data-pjax' => '0',
+                  'class' => 'btn btn-danger btn-xs'
+                ]);
+              }
+            ]
           ],
         ],
       ]); ?>
+
+      <?php
+
+      ?>
     </div>
     <!-- /.box-body -->
   </div>

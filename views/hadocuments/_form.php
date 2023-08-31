@@ -29,7 +29,7 @@ $listData2 = ArrayHelper::map($upfileHa, 'id', 'name');
 
     <?= $form->field($model, 'cat_id')->dropdownList(
         ArrayHelper::map(
-            HaCategory::find() ->where('id BETWEEN "70" AND "96"')->all(),
+            HaCategory::find() ->where('id BETWEEN "70" AND "200"')->all(),
             'id',
             'name'
         ),
