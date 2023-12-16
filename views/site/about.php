@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
     <p>
-        <h3>ระบบจัดเก็บเอกสาร ITA2564 <br>โรงพยาบาลสว่างวีระวงศ์ โรงพยาบาลสว่างวีระวงศ์ <br /> 
+    <p><h3>ระบบจัดเก็บเอกสาร ITA2567</p> <p>โรงพยาบาลน้ำยืน อำเภอน้ำยืน จังหวัดอุบลราชธานี </p> 
 	<br>Main Code FB: <a href="https://www.facebook.com/FREEDOOM.FINO">Narin CL </a><br>
         <br>Edit Code FB: <a href="https://www.facebook.com/toykthouse">Toy KT House</h3>
     </p>
