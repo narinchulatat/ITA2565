@@ -1522,4 +1522,222 @@ class GroupSearch extends Group
         ]);
         return $dataProvider;
     }
+
+    // ไตรมาส 2 2567
+        
+    public function searchIndicators121()
+    {
+        $query = group::find()->where(['cat_id' => 117]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators122()
+    {
+        $query = group::find()->where(['cat_id' => 118]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators123()
+    {
+        $query = group::find()->where(['cat_id' => 119]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators124()
+    {
+        $query = group::find()->where(['cat_id' => 120]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators125()
+    {
+        $query = group::find()->where(['cat_id' => 121]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators126()
+    {
+        $query = group::find()->where(['cat_id' => 122]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators127()
+    {
+        $query = group::find()->where(['cat_id' => 123]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators128()
+    {
+        $query = group::find()->where(['cat_id' => 124]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators129()
+    {
+        $query = group::find()->where(['cat_id' => 125]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators130()
+    {
+        $query = group::find()->where(['cat_id' => 126]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators131()
+    {
+        $query = group::find()->where(['cat_id' => 127]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators132()
+    {
+        $query = group::find()->where(['cat_id' => 128]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators133()
+    {
+        $query = group::find()->where(['cat_id' => 129]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators134()
+    {
+        $query = group::find()->where(['cat_id' => 130]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators135()
+    {
+        $query = group::find()->where(['cat_id' => 131]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators136()
+    {
+        $query = group::find()->where(['cat_id' => 132]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators137()
+    {
+        $query = group::find()->where(['cat_id' => 133]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators138()
+    {
+        $query = group::find()->where(['cat_id' => 134]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators139()
+    {
+        $query = group::find()->where(['cat_id' => 135]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators140()
+    {
+        $query = group::find()->where(['cat_id' => 136]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators141()
+    {
+        $query = group::find()->where(['cat_id' => 137]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators142()
+    {
+        $query = group::find()->where(['cat_id' => 138]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators143()
+    {
+        $query = group::find()->where(['cat_id' => 139]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+        
+    public function searchIndicators144()
+    {
+        $query = group::find()->where(['cat_id' => 140]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
 }

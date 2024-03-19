@@ -10,7 +10,7 @@ use yii\helpers\ArrayHelper;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 <?php
-$upfileCat = HaCategory::find()->where('id BETWEEN "107" AND "116"')->all();
+$upfileCat = HaCategory::find()->where('id BETWEEN "117" AND "140"')->all();
 $listData = ArrayHelper::map($upfileCat, 'id', 'name');
 ?>
 <div class="group-form">

@@ -656,7 +656,104 @@ class SiteController extends Controller
         $indicators120 = $searchModel->searchIndicators120();
         $indicators120->pagination->pageSize = 40;
         $indicators120->sort->defaultOrder = ['id' => SORT_ASC];
-    
+
+        // ไตรมาส 2 2567
+                
+        $indicators121 = $searchModel->searchIndicators121();
+        $indicators121->pagination->pageSize = 40;
+        $indicators121->sort->defaultOrder = ['id' => SORT_ASC];
+            
+        $indicators122 = $searchModel->searchIndicators122();
+        $indicators122->pagination->pageSize = 40;
+        $indicators122->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators123 = $searchModel->searchIndicators123();
+        $indicators123->pagination->pageSize = 40;
+        $indicators123->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators124 = $searchModel->searchIndicators124();
+        $indicators124->pagination->pageSize = 40;
+        $indicators124->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators125 = $searchModel->searchIndicators125();
+        $indicators125->pagination->pageSize = 40;
+        $indicators125->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators126 = $searchModel->searchIndicators126();
+        $indicators126->pagination->pageSize = 40;
+        $indicators126->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators127 = $searchModel->searchIndicators127();
+        $indicators127->pagination->pageSize = 40;
+        $indicators127->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators128 = $searchModel->searchIndicators128();
+        $indicators128->pagination->pageSize = 40;
+        $indicators128->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators129 = $searchModel->searchIndicators129();
+        $indicators129->pagination->pageSize = 40;
+        $indicators129->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators130 = $searchModel->searchIndicators130();
+        $indicators130->pagination->pageSize = 40;
+        $indicators130->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators131 = $searchModel->searchIndicators131();
+        $indicators131->pagination->pageSize = 40;
+        $indicators131->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators132 = $searchModel->searchIndicators132();
+        $indicators132->pagination->pageSize = 40;
+        $indicators132->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators133 = $searchModel->searchIndicators133();
+        $indicators133->pagination->pageSize = 40;
+        $indicators133->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators134 = $searchModel->searchIndicators134();
+        $indicators134->pagination->pageSize = 40;
+        $indicators134->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators135 = $searchModel->searchIndicators135();
+        $indicators135->pagination->pageSize = 40;
+        $indicators135->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators136 = $searchModel->searchIndicators136();
+        $indicators136->pagination->pageSize = 40;
+        $indicators136->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators137 = $searchModel->searchIndicators137();
+        $indicators137->pagination->pageSize = 40;
+        $indicators137->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators138 = $searchModel->searchIndicators138();
+        $indicators138->pagination->pageSize = 40;
+        $indicators138->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators139 = $searchModel->searchIndicators139();
+        $indicators139->pagination->pageSize = 40;
+        $indicators139->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators140 = $searchModel->searchIndicators140();
+        $indicators140->pagination->pageSize = 40;
+        $indicators140->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators141 = $searchModel->searchIndicators141();
+        $indicators141->pagination->pageSize = 40;
+        $indicators141->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators142 = $searchModel->searchIndicators142();
+        $indicators142->pagination->pageSize = 40;
+        $indicators142->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators143 = $searchModel->searchIndicators143();
+        $indicators143->pagination->pageSize = 40;
+        $indicators143->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators144 = $searchModel->searchIndicators144();
+        $indicators144->pagination->pageSize = 40;
+        $indicators144->sort->defaultOrder = ['id' => SORT_ASC];
 
         //test send mail
         //$this->sendMail('ikkdev@gmail.com','Your Fullname');
@@ -822,6 +919,34 @@ class SiteController extends Controller
             'indicators118' => $indicators118,
             'indicators119' => $indicators119,
             'indicators120' => $indicators120,
+
+            // ไตรมาส 2 2567
+            'indicators121' => $indicators121,
+            'indicators122' => $indicators122,
+            'indicators123' => $indicators123,
+            'indicators124' => $indicators124,
+            'indicators125' => $indicators125,
+            'indicators126' => $indicators126,
+            'indicators127' => $indicators127,
+            'indicators128' => $indicators128,
+            'indicators129' => $indicators129,
+            'indicators130' => $indicators130,
+            'indicators131' => $indicators131,
+            'indicators132' => $indicators132,
+            'indicators133' => $indicators133,
+            'indicators134' => $indicators134,
+            'indicators135' => $indicators135,
+            'indicators136' => $indicators136,
+            'indicators137' => $indicators137,
+            'indicators138' => $indicators138,
+            'indicators139' => $indicators139,
+            'indicators140' => $indicators140,
+            'indicators141' => $indicators141,
+            'indicators142' => $indicators142,
+            'indicators143' => $indicators143,
+            'indicators144' => $indicators144,
+
+
             
 
         ]);
