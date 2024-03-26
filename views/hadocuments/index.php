@@ -12,6 +12,16 @@ use fedemotta\datatables\DataTables;
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\HadocumentsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
+if (Yii::$app->user->isGuest) {
+  $name='Guest';
+  $username='Guest';
+}else{
+$user_id = Yii::$app->user->identity->id;
+$command3 = Yii::$app->db->createCommand("SELECT name FROM profile WHERE user_id='$user_id'");
+$name = $command3->queryScalar();
+
+$username = Yii::$app->user->identity->username;
+}
 
 $this->title = 'เอกสาร ITA';
 $this->params['breadcrumbs'][] = $this->title;
@@ -70,6 +80,12 @@ $this->params['breadcrumbs'][] = $this->title;
           //'create_date',
           //'cat_id',
           //'group_id',
+          [
+            'attribute' => 'user_id',
+            'value' => function ($model) {
+              return $model->profile->name;
+            },
+          ],
 
           // ['class' => 'yii\grid\ActionColumn'],
         ],

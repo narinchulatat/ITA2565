@@ -2,6 +2,7 @@
 
 namespace app\models;
 
+use dektrium\user\models\Profile;
 use Yii;
 use yii\helpers\Html;
 use yii\helpers\Url;
@@ -133,5 +134,10 @@ class HaDocuments extends \yii\db\ActiveRecord
     public function getCat()
     {
         return $this->hasOne(HaCategory::className(), ['id' => 'cat_id']);
+    }
+
+    public function getProfile()
+    {
+        return $this->hasOne(Profile::className(), ['user_id' => 'user_id']);
     }
 }
