@@ -755,6 +755,22 @@ class SiteController extends Controller
         $indicators144->pagination->pageSize = 40;
         $indicators144->sort->defaultOrder = ['id' => SORT_ASC];
 
+        $indicators145 = $searchModel->searchIndicators145();
+        $indicators145->pagination->pageSize = 40;
+        $indicators145->sort->defaultOrder = ['id' => SORT_ASC];
+        
+        $indicators146 = $searchModel->searchIndicators146();
+        $indicators146->pagination->pageSize = 40;
+        $indicators146->sort->defaultOrder = ['id' => SORT_ASC];
+
+        $indicators147 = $searchModel->searchIndicators147();
+        $indicators147->pagination->pageSize = 40;
+        $indicators147->sort->defaultOrder = ['id' => SORT_ASC];
+        
+        $indicators148 = $searchModel->searchIndicators148();
+        $indicators148->pagination->pageSize = 40;
+        $indicators148->sort->defaultOrder = ['id' => SORT_ASC];
+
         //test send mail
         //$this->sendMail('ikkdev@gmail.com','Your Fullname');
 
@@ -945,6 +961,12 @@ class SiteController extends Controller
             'indicators142' => $indicators142,
             'indicators143' => $indicators143,
             'indicators144' => $indicators144,
+
+            // ไตรมาส 2 2567
+            'indicators145' => $indicators145,
+            'indicators146' => $indicators146,
+            'indicators147' => $indicators147,
+            'indicators148' => $indicators148,
 
 
             

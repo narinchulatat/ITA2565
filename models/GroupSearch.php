@@ -1740,4 +1740,42 @@ class GroupSearch extends Group
         ]);
         return $dataProvider;
     }
+
+    public function searchIndicators145()
+    {
+        $query = group::find()->where(['cat_id' => 141]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    public function searchIndicators146()
+    {
+        $query = group::find()->where(['cat_id' => 142]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    public function searchIndicators147()
+    {
+        $query = group::find()->where(['cat_id' => 143]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+    public function searchIndicators148()
+    {
+        $query = group::find()->where(['cat_id' => 144]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
+        return $dataProvider;
+    }
+
+
 }
